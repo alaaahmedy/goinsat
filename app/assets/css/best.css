@@ -1,0 +1,308 @@
+.wppBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: 220px;
+    height: 44px;
+    z-index: 999;
+    max-width: 250px;
+    height: 44px;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+@media(max-width:950px) {
+    .world-cup {
+        height: auto !important
+    }
+    .ed1.txt-center {
+        margin: 30px 0 10px !important
+    }
+}
+
+.whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #25d366;
+    border-radius: 25px
+}
+
+.pulse {
+    position: fixed
+}
+
+.pulse:after {
+    content: "";
+    display: block;
+    width: 222px;
+    height: 51px;
+    border-radius: 30px;
+    border: 1px solid #25d366;
+    position: absolute;
+    top: -4px;
+    left: -1px;
+    animation: pulse 2s ease 0s infinite
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+    80% {
+        opacity: 0;
+        transform: scale(1.2)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2)
+    }
+}
+
+.columnte {
+    margin: 15px 15px 0;
+    padding: 0
+}
+
+. columnte:last-child {
+    padding-bottom: 60px
+}
+
+. columnte::after {
+    content: '';
+    clear: both;
+    display: block
+}
+
+. columnte div {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 0 25px;
+    padding: 0
+}
+
+. columnte div:first-child {
+    margin-left: 0
+}
+
+. columnte div span {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 0
+}
+
+figure {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0;
+    overflow: hidden
+}
+
+figure:hover+span {
+    bottom: -36px;
+    opacity: 1
+}
+
+.hover06 figure img {
+    -webkit-transform: rotate(15deg) scale(1.4);
+    transform: rotate(15deg) scale(1.4);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+}
+
+.hover06 figure:hover img {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1)
+}
+
+@media screen and (max-width:950px) {
+    .hidech {
+        display: none
+    }
+}
+
+.image:hover {
+    opacity: 1;
+    background-color: #552f91
+}
+
+.far {
+    font-family: fontawesome !important;
+    font-style: normal;
+    padding: 0 8px;
+    font-size: large
+}
+
+.footerSpace {
+    padding: 0 0 80px;
+    visibility: hidden
+}
+
+.topnav {
+    width: 100%;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    will-change: top;
+    background-image: linear-gradient(0deg, transparent, #571b6e)
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 60px
+}
+
+.topnav a:hover {
+    background-image: linear-gradient(1deg, #ffffff, transparent);
+    color: #222;
+    font-weight: 800;
+    border-radius: 0 0 6px 6px
+}
+
+.topnav a.active {
+    background-image: linear-gradient(1deg, #532788, transparent)
+}
+
+.topnav .icon {
+    display: none
+}
+
+@media screen and (max-width:600px) {
+    .topnav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width:600px) {
+    .topnav a:not(:first-child) {
+        display: none
+    }
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 20px;
+        font-size: 40px;
+        margin: 0
+    }
+}
+
+@media screen and (max-width:600px) {
+    .topnav.responsive {
+        position: relative
+    }
+    .topnav.responsive .icon {
+        padding: 10px 20px;
+        font-size: 40px;
+        margin: 0
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        border-top: solid 1px #5f5f5f
+    }
+}
+
+.logo {
+    float: right;
+    width: auto;
+    height: 40px;
+    padding: 0;
+    margin: 10px
+}
+
+.button1 {
+    background-color: #4caf50
+}
+
+.button2 {
+    background-color: #008cba
+}
+
+.bgimg {
+    background-image: url(https://www.w3schools.com/w3images/forestbridge.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    font-size: 18px
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    font-size: 15px
+}
+
+.middle {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+hr {
+    margin: auto;
+    width: 70%
+}
+
+.main {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+.image-b {
+    width: 100%;
+    max-width: 146px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-image: linear-gradient( 1deg, #3a3a3a, transparent)
+}
+
+.image-b:hover {
+    opacity: 1;
+    background-color: #552f91
+}
+
+.respimg {
+    width: 93%;
+    max-width: 720px;
+    height: auto
+}
